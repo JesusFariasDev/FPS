@@ -5,16 +5,22 @@ using UnityEngine;
 public class PlayerLook : MonoBehaviour
 {
     public Camera cam;
+    private float xRotation = 0f;
 
-    // Start is called before the first frame update
-    void Start()
+    public float xSensivity = 30f;
+    public float ySensivity = 30f;
+
+    public void ProcessLook(Vector2 input)
     {
-        
+        float mouseX = input.x;
+        float mouseY = input.y;
+        //calculate camara rotation for looking um and down
+        xRotation -= (mouseY * Time.deltaTime) * ySensivity;
+        xRotation = Mathf.Clamp(xRotation, -80f, 80f);
+        //applying to our camera transform
+        cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        //rotate player to look left an right
+        transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSensivity); 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
