@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // message displayed to player when looking at an interactable
+    public string promptMessage;
+    public void BaseInteract()
     {
-        
+        Interact();
     }
-
-    // Update is called once per frame
-    void Update()
+    protected virtual void Interact()
     {
-        
+        // template function to be overriden by subclasses
     }
 }
