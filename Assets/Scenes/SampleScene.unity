@@ -327,7 +327,7 @@ Transform:
   m_GameObject: {fileID: 52201021}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.2, z: 0}
+  m_LocalPosition: {x: -0.15, y: -1.2, z: -0.04}
   m_LocalScale: {x: 40, y: 0.1, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -940,7 +940,7 @@ Transform:
   m_GameObject: {fileID: 546603752}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.59, z: 3.383}
+  m_LocalPosition: {x: -0.18, y: 0.59, z: 3.383}
   m_LocalScale: {x: 0.15, y: 0.67, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -959,6 +959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: Use Keypad
+  door: {fileID: 1197908516}
 --- !u!1 &597821446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1197908517}
+  - component: {fileID: 1197908518}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1588,6 +1590,27 @@ Transform:
   - {fileID: 515794827}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1197908518
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197908516}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 339999041433bf646a59177e958ee2a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1311833681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1728,7 @@ GameObject:
   - component: {fileID: 1591700614}
   - component: {fileID: 1591700613}
   - component: {fileID: 1591700612}
+  - component: {fileID: 1591700616}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -1798,6 +1822,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 52201025}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!95 &1591700616
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591700611}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a222d99b0fc71b4195e1d22a7293ba1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2083081177
 GameObject:
   m_ObjectHideFlags: 0

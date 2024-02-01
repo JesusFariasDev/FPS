@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Keypad : Interactable
 {
+    [SerializeField]
+    private GameObject door;
     private bool doorOpen;
     // Start is called before the first frame update
     void Start()
@@ -16,8 +18,7 @@ public class Keypad : Interactable
     {
         
     }
-    // will make design interaction using code7
-
+    // Will interact with properties from animator
     protected override void Interact()
     {
         doorOpen = !doorOpen;
