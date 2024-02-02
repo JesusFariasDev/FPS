@@ -4,8 +4,14 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    // message displayed to player when looking at an interactable
+    // Add or remove an InteractionEvent component to this gameobject
+    public bool useEvents;
+    [SerializeField]
     public string promptMessage;
+    public virtual string OnLook()
+    {
+        return promptMessage;
+    }
     public void BaseInteract()
     {
         Interact();
